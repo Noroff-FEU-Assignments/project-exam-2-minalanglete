@@ -1,0 +1,25 @@
+/* eksempel på bruk av variables
+
+$font-primary: "open sans", sans-serif;
+$font-headings: "montserrat", sans-serif;
+
+$tablet-width: 768px;
+
+$colours: (
+  primary: #779fa1,
+  secondary: #564154,
+  accent: #88498f,
+  grey: #efefef,
+  beige: #e0cba8,
+);
+
+@function getColour($colour) {
+  @return map-get($colours, $colour);
+}
+
+
+hvordan bruke den videre
+font-family: $font-primary;
+color: getColour(primary);
+background: getColour(secondary);
+*/
