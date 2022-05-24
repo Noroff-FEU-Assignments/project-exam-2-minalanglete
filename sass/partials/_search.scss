@@ -1,0 +1,38 @@
+.containersearch {
+  background-color: getColour(primary);
+  color: white;
+  max-width: 520px;
+  padding: 20px 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  h1 {
+    text-align: left;
+    font-family: "SignPainter";
+    text-transform: none;
+    margin: 0px;
+    font-size: 50px;
+  }
+  .slogantitle {
+    margin-top: 0px;
+  }
+  .slogantext {
+    margin-top: 0px;
+    font-weight: bold;
+  }
+  .slogan {
+    font-family: "SignPainter";
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    gap: 20px;
+  }
+  .searchbar {
+    width: 500px;
+    padding: 10px;
+    border: none;
+  }
+}
+.header {
+  position: relative;
+}

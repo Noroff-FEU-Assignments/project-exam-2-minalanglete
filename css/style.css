@@ -40,6 +40,7 @@ h1 {
   max-width: 500px;
   height: 450px;
   margin: auto;
+  margin-bottom: 50px;
   background-color: #efefef;
   font-family: "verdana", sans-serif;
   font-weight: bold;
@@ -83,11 +84,67 @@ h1 {
   margin-top: 30px;
 }
 
+.enquiry button:hover {
+  background-color: #363636;
+}
+
 .enquiryhr {
   max-width: 480px;
   margin-top: 0px;
   margin-bottom: 20px;
   border: 1px solid #363636;
+}
+
+.contactform {
+  max-width: 500px;
+  height: 320px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #efefef;
+  font-family: "verdana", sans-serif;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+}
+
+.contactform div {
+  padding-bottom: 15px;
+}
+
+.contactform div input {
+  text-align: right;
+}
+
+.contactform label {
+  width: 200px;
+  display: inline-block;
+  text-align: left;
+}
+
+.contactform input {
+  border: none;
+  padding: 5px;
+  width: 250px;
+}
+
+.contactform .message {
+  height: 100px;
+}
+
+.contactform button {
+  color: white;
+  background-color: #a81600;
+  border: none;
+  border-radius: 50px;
+  padding: 7px 20px;
+  font-family: "verdana", sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.contactform button:hover {
+  background-color: #363636;
 }
 
 nav {
@@ -168,5 +225,278 @@ nav a:hover {
 
 .footer .footercontainer .footerleft p {
   margin: 0px;
+}
+
+.contactinfo {
+  margin: auto;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 90px;
+  padding-top: 30px;
+}
+
+.contactinfo p {
+  margin: 0px;
+}
+
+.contactinfo .email {
+  padding-top: 20px;
+}
+
+.contactinfo .adress {
+  padding-top: 30px;
+}
+
+.login {
+  max-width: 400px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #363636;
+  color: white;
+  font-family: "verdana", sans-serif;
+  font-weight: bold;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+}
+
+.login div {
+  padding-bottom: 15px;
+}
+
+.login div input {
+  text-align: right;
+}
+
+.login label {
+  width: 120px;
+  display: inline-block;
+  text-align: left;
+}
+
+.login input {
+  border: none;
+  padding: 5px;
+  width: 200px;
+}
+
+.login button {
+  color: #a81600;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 7px 50px;
+  font-family: "verdana", sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.login button:hover {
+  color: white;
+  background-color: #a81600;
+}
+
+.containerdetailhotel {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #efefef;
+  padding: 20px 40px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.containerdetailhotel h1 {
+  text-align: left;
+  text-transform: none;
+}
+
+.containerdetailhotel .buttonenquiry {
+  background-color: #a81600;
+  color: white;
+  font-family: "verdana", sans-serif;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.containerdetailhotel .buttonenquiry:active {
+  color: white;
+}
+
+.containerdetailhotel .buttonenquiry:visited {
+  color: white;
+}
+
+.containerdetailhotel .buttonenquiry:hover {
+  background-color: #363636;
+}
+
+.containerdetailhotel .hotelimage {
+  margin-top: 30px;
+}
+
+.containerdetailhotel .containerinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 120px;
+}
+
+.containerdetailhotel .containerinfo .discription {
+  max-width: 400px;
+}
+
+.containerdetailhotel .containerinfo .address {
+  margin-top: 0px;
+}
+
+.containerdetailhotel .containerprice {
+  text-align: right;
+  color: #a81600;
+  font-family: "verdana", sans-serif;
+  font-weight: bold;
+}
+
+.containerdetailhotel .containerprice .price {
+  font-size: 25px;
+  margin: 0px;
+}
+
+.containerdetailhotel .containerprice .pricenight {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.containerdetailhotel .facilities {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.containerdetailhotel .facilitiesinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+}
+
+.containerhotels {
+  background-color: #efefef;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.containerhotels a:visited {
+  color: #363636;
+}
+
+.containerhotels a:active {
+  color: #363636;
+}
+
+.containerhotels a {
+  color: #363636;
+}
+
+.containerhotels h2 {
+  margin: 0px;
+}
+
+.containerhotels p {
+  margin: 0px;
+}
+
+.containerhotels .hotelimagecard {
+  max-width: 300px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.containerhotels .containercard {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  border-radius: 20px;
+}
+
+.containerhotels .containercard .cardcenter {
+  padding-top: 20px;
+  width: 270px;
+}
+
+.containerhotels .containercard .cardcenter .nrbeds {
+  padding-top: 30px;
+}
+
+.containerhotels .containercard .cardright {
+  padding-top: 45px;
+  color: #a81600;
+  font-weight: bold;
+  text-align: right;
+}
+
+.containerhotels .containercard .cardright .price {
+  font-size: 25px;
+}
+
+.containerhotels .containercard .cardright .viewmore {
+  color: white;
+  background-color: #a81600;
+  padding: 7px 20px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.containersearch {
+  background-color: #363636;
+  color: white;
+  max-width: 520px;
+  padding: 20px 20px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.containersearch h1 {
+  text-align: left;
+  font-family: "SignPainter";
+  text-transform: none;
+  margin: 0px;
+  font-size: 50px;
+}
+
+.containersearch .slogantitle {
+  margin-top: 0px;
+}
+
+.containersearch .slogantext {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.containersearch .slogan {
+  font-family: "SignPainter";
+  font-size: 40px;
+  font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.containersearch .searchbar {
+  width: 500px;
+  padding: 10px;
+  border: none;
+}
+
+.header {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */

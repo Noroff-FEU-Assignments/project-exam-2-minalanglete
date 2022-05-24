@@ -1,0 +1,61 @@
+.containerhotels {
+  background-color: getColour(accent);
+  padding: 30px;
+  margin-bottom: 40px;
+
+  a:visited {
+    color: getColour(primary);
+  }
+  a:active {
+    color: getColour(primary);
+  }
+  a {
+    color: getColour(primary);
+  }
+
+  h2 {
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
+
+  .hotelimagecard {
+    max-width: 300px;
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .containercard {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    display: flex;
+    gap: 30px;
+    border-radius: 20px;
+
+    .cardcenter {
+      padding-top: 20px;
+      width: 270px;
+      .nrbeds {
+        padding-top: 30px;
+      }
+    }
+    .cardright {
+      padding-top: 45px;
+      color: getColour(secondary);
+      font-weight: bold;
+      text-align: right;
+      .price {
+        font-size: 25px;
+      }
+      .viewmore {
+        color: getColour(white);
+        background-color: getColour(secondary);
+        padding: 7px 20px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        margin-top: 50px;
+      }
+    }
+  }
+}

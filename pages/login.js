@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
+import Footer from "../components/layout/Footer";
+import LoginForm from "../components/layout/LoginForm";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <div className="container">
         <h1>Login</h1>
       </div>
+      <LoginForm />
+      <Footer />
     </Layout>
   );
 }

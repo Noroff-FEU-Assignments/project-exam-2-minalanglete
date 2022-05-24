@@ -2,15 +2,40 @@ import Heading from "../../components/layout/Heading";
 import Layout from "../../components/layout/Layout";
 import axios from "axios";
 import { BASE_URL } from "../../components/constants/api";
+import Footer from "../../components/layout/Footer";
+import Link from "next/link";
 
 export default function Hotel({ hotel }) {
   return (
     <Layout>
-      <Heading title={hotel.attributes.name} />
-      <div>
-        <p>{hotel.attributes.address}</p>
-        <p>{hotel.attributes.description}</p>
+      <div className="containerdetailhotel">
+        <Heading title={hotel.attributes.name} />
+        <hr />
+        <div>
+          <div className="containerinfo">
+            <div className="containeradress">
+              <p className="address">{hotel.attributes.address}</p>
+              <p className="discription">{hotel.attributes.description}</p>
+            </div>
+            <div className="containerprice">
+              <p className="price">{hotel.attributes.price} NOK</p>
+              <p className="pricenight">pr night</p>
+              <Link href="/enquiry">
+                <a className="buttonenquiry">Send enquiry</a>
+              </Link>
+            </div>
+          </div>
+          <img src="/bed.jpg" alt="hotelroom bed" className="hotelimage" />
+          <p className="facilities">The facilities</p>
+          <div className="facilitiesinfo">
+            <p>number of beds {hotel.attributes.bed}</p>
+            <p>wifi at the hotel: {hotel.attributes.wifi}</p>
+            <p>Parking at the hotel: {hotel.attributes.parking}</p>
+            <p>Breakfast included: {hotel.attributes.breakfast}</p>
+          </div>
+        </div>
       </div>
+      <Footer />
     </Layout>
   );
 }

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
+import Footer from "../components/layout/Footer";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="container">
         <h1>admin</h1>
       </div>
+      <Footer />
     </Layout>
   );
 }

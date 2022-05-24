@@ -1,0 +1,17 @@
+.contactinfo {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  gap: 90px;
+  padding-top: 30px;
+
+  p {
+    margin: 0px;
+  }
+  .email {
+    padding-top: 20px;
+  }
+  .adress {
+    padding-top: 30px;
+  }
+}

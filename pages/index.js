@@ -11,9 +11,24 @@ export default function Home(props) {
   return (
     <Layout>
       <Head />
-
-      <Heading title="Home" />
-      <img src="/header.jpg" alt="heder image of Floyen i Bergen" />
+      <div className="header">
+        <div className="containersearch">
+          <div className="slogan">
+            <Heading title="Holidaze" />
+            <p className="slogantitle">- your local tourism agency</p>
+          </div>
+          <p className="slogantext">
+            This is the place to find hotels, B&Bs and guesthouses in Bergen city. Make a search and
+            find you next stay.
+          </p>
+          <input
+            type="text"
+            placeholder="Search for places in Bergen"
+            className="searchbar"
+          ></input>
+        </div>
+        <img src="/header.jpg" alt="heder image of Floyen i Bergen" />
+      </div>
       {props.hotels.map((hotel) => {
         return (
           <a key={hotel.id} href={`hotel/${hotel.id}`}>

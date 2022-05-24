@@ -13,22 +13,33 @@ export default function Home(props) {
       <Head />
 
       <Heading title="Hotels" />
-      {props.hotels.map((hotel) => {
-        return (
-          <a key={hotel.id} href={`hotel/${hotel.id}`}>
-            <h2>{hotel.attributes.name}</h2>
-            <p>{hotel.attributes.address}</p>
-            <p>{hotel.attributes.description}</p>
-            <p>{hotel.attributes.price} NOK</p>
-            <p>number of beds: {hotel.attributes.bed}</p>
-            <p>wifi at the hotel: {hotel.attributes.wifi}</p>
-            <p>Parking at the hotel: {hotel.attributes.parking}</p>
-            <p>Breakfast included: {hotel.attributes.breakfast}</p>
-            <img src={hotel.attributes.img} />
-          </a>
-        );
-      })}
+      <div className="containerhotels">
+        {props.hotels.map((hotel) => {
+          return (
+            <a key={hotel.id} href={`hotel/${hotel.id}`}>
+              <div className="containercard">
+                <div className="cardleft">
+                  <img src="/bed.jpg" alt="hotelroom bed" className="hotelimagecard" />
+                </div>
+                <div className="cardcenter">
+                  <h2>{hotel.attributes.name}</h2>
+                  <p>{hotel.attributes.address}</p>
+                  <p className="nrbeds">number of beds {hotel.attributes.bed}</p>
+                  <p>wifi at the hotel: {hotel.attributes.wifi}</p>
+                  <p>Parking at the hotel: {hotel.attributes.parking}</p>
+                  <p>Breakfast included: {hotel.attributes.breakfast}</p>
+                </div>
+                <div className="cardright">
+                  <p className="price">{hotel.attributes.price} NOK</p>
+                  <p>pr night</p>
 
+                  <p className="viewmore">View more</p>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
       <Footer />
     </Layout>
   );

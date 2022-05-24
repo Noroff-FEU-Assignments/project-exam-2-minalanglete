@@ -1,7 +1,8 @@
-.enquiry {
+.contactform {
   max-width: 500px;
-  height: 450px;
+  height: 320px;
   margin: auto;
+  margin-bottom: 50px;
   background-color: getColour(accent);
   font-family: $font-primary;
   font-weight: bold;
@@ -25,10 +26,10 @@
   input {
     border: none;
     padding: 5px;
-    width: 200px;
+    width: 250px;
   }
   .message {
-    height: 70px;
+    height: 100px;
   }
   button {
     color: getColour(white);
@@ -40,10 +41,7 @@
     font-weight: bold;
     margin-top: 30px;
   }
-}
-.enquiryhr {
-  max-width: 480px;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  border: 1px solid getColour(primary);
+  button:hover {
+    background-color: getColour(primary);
+  }
 }
