@@ -4,6 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
       <nav>
+        <div className="logo">Holidaze</div>
         <Link href="/">
           <a>Home</a>
         </Link>

@@ -1,0 +1,40 @@
+.footer {
+  background-color: getColour(accent);
+  margin: auto;
+  font-family: $font-text;
+  font-weight: 300;
+  padding-bottom: 30px;
+
+  h4 {
+    font-family: $font-primary;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  hr {
+    border: 1 solid getColour(primary);
+    width: 175px;
+    margin-top: 0px;
+  }
+
+  .footercontainer {
+    display: flex;
+    gap: 100px;
+    margin: auto;
+    max-width: 600px;
+
+    .footercenter,
+    .footerright {
+      display: flex;
+      flex-flow: column;
+    }
+    .footerleft {
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}

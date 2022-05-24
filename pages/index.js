@@ -12,24 +12,24 @@ export default function Home(props) {
     <Layout>
       <Head />
 
-      <div className="container">
-        <Heading title="Home" />
-        {props.hotels.map((hotel) => {
-          return (
-            <a key={hotel.id} href={`hotel/${hotel.id}`}>
-              <h2>{hotel.attributes.name}</h2>
-              <p>{hotel.attributes.address}</p>
-              <p>{hotel.attributes.description}</p>
-              <p>{hotel.attributes.price} NOK</p>
-              <p>number of beds: {hotel.attributes.bed}</p>
-              <p>wifi at the hotel: {hotel.attributes.wifi}</p>
-              <p>Parking at the hotel: {hotel.attributes.parking}</p>
-              <p>Breakfast included: {hotel.attributes.breakfast}</p>
-              <img src={hotel.attributes.img} />
-            </a>
-          );
-        })}
-      </div>
+      <Heading title="Home" />
+      <img src="/header.jpg" alt="heder image of Floyen i Bergen" />
+      {props.hotels.map((hotel) => {
+        return (
+          <a key={hotel.id} href={`hotel/${hotel.id}`}>
+            <h2>{hotel.attributes.name}</h2>
+            <p>{hotel.attributes.address}</p>
+            <p>{hotel.attributes.description}</p>
+            <p>{hotel.attributes.price} NOK</p>
+            <p>number of beds: {hotel.attributes.bed}</p>
+            <p>wifi at the hotel: {hotel.attributes.wifi}</p>
+            <p>Parking at the hotel: {hotel.attributes.parking}</p>
+            <p>Breakfast included: {hotel.attributes.breakfast}</p>
+            <img src={hotel.attributes.img} />
+          </a>
+        );
+      })}
+
       <Footer />
     </Layout>
   );

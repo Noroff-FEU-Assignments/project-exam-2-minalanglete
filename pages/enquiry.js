@@ -9,7 +9,8 @@ export default function Home() {
       <Head />
 
       <div className="container">
-        <Heading title="Enquiry" />
+        <Heading title="send Enquiry to a hotel" />
+        <hr className="enquiryhr" />
         <EnquiryForm />
       </div>
     </Layout>

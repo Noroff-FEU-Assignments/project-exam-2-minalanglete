@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <form>
+    <form className="contactform">
       <label for="first">First name</label>
       <input type="text" id="first" name="first" required minlength="3" />
       <label for="last">Last name</label>
