@@ -56,6 +56,9 @@
         text-transform: uppercase;
         margin-top: 50px;
       }
+      .viewmore:hover {
+        background-color: getColour(primary);
+      }
     }
   }
 }

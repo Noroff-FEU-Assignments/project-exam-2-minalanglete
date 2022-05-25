@@ -29,17 +29,22 @@ export default function Home(props) {
         </div>
         <img src="/header.jpg" alt="heder image of Floyen i Bergen" />
       </div>
-      {props.hotels.map((hotel) => {
-        return (
-          <a key={hotel.id} href={`hotel/${hotel.id}`}>
-            <img src="/bed.jpg" alt="hotelroom bed" className="indexhotelimg" />
-            <h2>{hotel.attributes.name}</h2>
-            <p>{hotel.attributes.address}</p>
-            <p>{hotel.attributes.price} NOK</p>
-          </a>
-        );
-      })}
-
+      <p className="populartitle">Popular places to stay in Bergen</p>
+      <div className="containerpopular">
+        {props.hotels.map((hotel) => {
+          return (
+            <a key={hotel.id} href={`hotel/${hotel.id}`}>
+              <div className="popularhotel">
+                <img src="/hotel.jpg" alt="hotels" className="indexhotelimg" />
+                <h2>{hotel.attributes.name}</h2>
+                <hr />
+                <p>{hotel.attributes.address}</p>
+                <p className="price">{hotel.attributes.price} pr night</p>
+              </div>
+            </a>
+          );
+        })}
+      </div>
       <Footer />
     </Layout>
   );
