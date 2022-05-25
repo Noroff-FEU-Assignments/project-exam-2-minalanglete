@@ -4,6 +4,7 @@ import Footer from "../components/layout/Footer";
 import Heading from "../components/layout/Heading";
 import axios from "axios";
 import { BASE_URL } from "../components/constants/api";
+import Navbar from "../components/layout/NavBar";
 
 export default function Home(props) {
   console.log(props);
@@ -11,6 +12,7 @@ export default function Home(props) {
   return (
     <Layout>
       <Head />
+
       <div className="header">
         <div className="containersearch">
           <div className="slogan">
@@ -27,8 +29,9 @@ export default function Home(props) {
             className="searchbar"
           ></input>
         </div>
-        <img src="/header.jpg" alt="heder image of Floyen i Bergen" />
+        <img src="/header.jpg" alt="heder image of Floyen i Bergen " />
       </div>
+
       <p className="populartitle">Popular places to stay in Bergen</p>
       <div className="containerpopular">
         {props.hotels.map((hotel) => {
@@ -65,4 +68,13 @@ export async function getStaticProps() {
       hotels: hotels,
     },
   };
+}
+
+export function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }

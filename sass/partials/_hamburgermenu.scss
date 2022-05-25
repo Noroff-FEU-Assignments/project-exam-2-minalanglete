@@ -1,0 +1,91 @@
+.navbar1 {
+  color: getColour(white);
+  border-bottom: 8px solid getColour(secondary);
+}
+.navbar2 {
+  display: flex;
+  background-color: getColour(primary);
+
+  a {
+    color: getColour(white);
+    font-family: $font-primary;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 25px 10px 20px 30px;
+    padding: 5px;
+    text-decoration: none;
+  }
+  a:visited,
+  a:active {
+    color: getColour(white);
+  }
+}
+
+.navbar3 {
+  padding: 5px;
+  margin: 5px;
+}
+.navbar3:hover {
+  background-color: getColour(secondary);
+}
+.svg1 {
+  display: none;
+}
+.logomobil {
+  display: none;
+}
+
+@media (max-width: 1065px) {
+  .navbarmobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    display: none;
+  }
+  .logomobil {
+    display: block;
+  }
+  .svg1 {
+    display: block;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .navbar {
+    background-color: getColour(primary);
+    border-bottom: 8px solid getColour(secondary);
+  }
+  .navbar1 {
+    text-align: center;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    flex-direction: column;
+    left: -100%;
+    top: 20%;
+  }
+  .navbar_change {
+    background-color: getColour(primary);
+    text-align: center;
+
+    height: 400px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .navbar2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo,
+.logomobil {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 60px;
+  text-align: left;
+  padding-left: 20px;
+}
