@@ -38,3 +38,12 @@
     }
   }
 }
+@media (max-width: 900px) {
+  .footer {
+    .footercontainer {
+      flex-wrap: wrap;
+      width: 200px;
+      gap: 0px;
+    }
+  }
+}

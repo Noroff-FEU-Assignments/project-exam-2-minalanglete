@@ -4,6 +4,9 @@
   display: flex;
   gap: 90px;
   padding-top: 30px;
+  @media (max-width: 520px) {
+    padding: 0px 0px 20px 30px;
+  }
 
   p {
     margin: 0px;
@@ -13,5 +16,11 @@
   }
   .adress {
     padding-top: 30px;
+  }
+}
+.map {
+  max-width: 250px;
+  @media (max-width: 520px) {
+    display: none;
   }
 }

@@ -9,18 +9,22 @@
   border-radius: 10px 10px 0px 0px;
   text-align: center;
   padding: 30px 10px 10px 10px;
+  @media (max-width: 430px) {
+    border-radius: 0px;
+    height: 600px;
+  }
 
   div {
     padding-bottom: 15px;
-    input {
-      text-align: right;
-    }
   }
 
   label {
     width: 200px;
     display: inline-block;
     text-align: left;
+    @media (max-width: 430px) {
+      padding-bottom: 5px;
+    }
   }
 
   input {

@@ -19,26 +19,18 @@ body {
   color: black;
 }
 
-img {
-  width: 100%;
-  margin: 0px;
-}
-
-.map {
-  max-width: 250px;
-}
-
-.indexhotelimg {
-  max-width: 250px;
-  border-radius: 40px 40px 0px 0px;
-}
-
 h1 {
   text-align: center;
   font-family: "verdana", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 5px;
+}
+
+@media (max-width: 490px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 .enquiry {
@@ -54,18 +46,27 @@ h1 {
   padding: 30px 10px 10px 10px;
 }
 
-.enquiry div {
-  padding-bottom: 15px;
+@media (max-width: 430px) {
+  .enquiry {
+    border-radius: 0px;
+    height: 600px;
+  }
 }
 
-.enquiry div input {
-  text-align: right;
+.enquiry div {
+  padding-bottom: 15px;
 }
 
 .enquiry label {
   width: 200px;
   display: inline-block;
   text-align: left;
+}
+
+@media (max-width: 430px) {
+  .enquiry label {
+    padding-bottom: 5px;
+  }
 }
 
 .enquiry input {
@@ -113,18 +114,28 @@ h1 {
   padding: 30px 10px 10px 10px;
 }
 
-.contactform div {
-  padding-bottom: 15px;
+@media (max-width: 520px) {
+  .contactform {
+    border-radius: 0px;
+    height: 500px;
+  }
 }
 
-.contactform div input {
-  text-align: right;
+.contactform div {
+  padding-bottom: 15px;
 }
 
 .contactform label {
   width: 200px;
   display: inline-block;
   text-align: left;
+}
+
+@media (max-width: 480px) {
+  .contactform label {
+    padding-bottom: 10px;
+    width: 250px;
+  }
 }
 
 .contactform input {
@@ -232,6 +243,15 @@ nav a:hover {
   margin: 0px;
 }
 
+@media (max-width: 900px) {
+  .footer .footercontainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 200px;
+    gap: 0px;
+  }
+}
+
 .contactinfo {
   margin: auto;
   max-width: 500px;
@@ -240,6 +260,12 @@ nav a:hover {
   display: flex;
   gap: 90px;
   padding-top: 30px;
+}
+
+@media (max-width: 520px) {
+  .contactinfo {
+    padding: 0px 0px 20px 30px;
+  }
 }
 
 .contactinfo p {
@@ -252,6 +278,16 @@ nav a:hover {
 
 .contactinfo .adress {
   padding-top: 30px;
+}
+
+.map {
+  max-width: 250px;
+}
+
+@media (max-width: 520px) {
+  .map {
+    display: none;
+  }
 }
 
 .login {
@@ -268,6 +304,12 @@ nav a:hover {
   padding: 30px 10px 10px 10px;
 }
 
+@media (max-width: 350px) {
+  .login {
+    border-radius: 0px;
+  }
+}
+
 .login div {
   padding-bottom: 15px;
 }
@@ -280,6 +322,13 @@ nav a:hover {
   width: 120px;
   display: inline-block;
   text-align: left;
+}
+
+@media (max-width: 350px) {
+  .login label {
+    width: 200px;
+    padding-bottom: 5px;
+  }
 }
 
 .login input {
@@ -312,9 +361,22 @@ nav a:hover {
   border-radius: 40px 40px 0px 0px;
 }
 
+@media (max-width: 690px) {
+  .containerdetailhotel {
+    border-radius: 0px;
+    padding: 0px;
+  }
+}
+
 .containerdetailhotel h1 {
   text-align: left;
   text-transform: none;
+}
+
+@media (max-width: 690px) {
+  .containerdetailhotel h1 {
+    padding: 20px 0px 0px 20px;
+  }
 }
 
 .containerdetailhotel .buttonenquiry {
@@ -350,6 +412,23 @@ nav a:hover {
   gap: 120px;
 }
 
+@media (max-width: 850px) {
+  .containerdetailhotel .containerinfo {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 690px) {
+  .containerdetailhotel .containerinfo {
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+  }
+}
+
 .containerdetailhotel .containerinfo .discription {
   max-width: 400px;
 }
@@ -363,6 +442,12 @@ nav a:hover {
   color: #a81600;
   font-family: "verdana", sans-serif;
   font-weight: bold;
+}
+
+@media (max-width: 690px) {
+  .containerdetailhotel .containerprice {
+    padding-right: 20px;
+  }
 }
 
 .containerdetailhotel .containerprice .price {
@@ -380,6 +465,12 @@ nav a:hover {
   margin-bottom: 0px;
 }
 
+@media (max-width: 690px) {
+  .containerdetailhotel .facilities {
+    padding-left: 20px;
+  }
+}
+
 .containerdetailhotel .facilitiesinfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,10 +478,27 @@ nav a:hover {
   gap: 28px;
 }
 
+@media (max-width: 690px) {
+  .containerdetailhotel .facilitiesinfo {
+    gap: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 20px;
+  }
+}
+
 .containerhotels {
   background-color: #efefef;
   padding: 30px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 850px) {
+  .containerhotels {
+    padding: 0px;
+  }
 }
 
 .containerhotels a:visited {
@@ -409,13 +517,32 @@ nav a:hover {
   margin: 0px;
 }
 
+@media (max-width: 850px) {
+  .containerhotels h2 {
+    padding-left: 20px;
+  }
+}
+
 .containerhotels p {
   margin: 0px;
+}
+
+@media (max-width: 850px) {
+  .containerhotels p {
+    padding-left: 20px;
+  }
 }
 
 .containerhotels .hotelimagecard {
   max-width: 300px;
   border-radius: 20px 0px 0px 20px;
+}
+
+@media (max-width: 850px) {
+  .containerhotels .hotelimagecard {
+    max-width: 100%;
+    border-radius: 0px;
+  }
 }
 
 .containerhotels .containercard {
@@ -429,9 +556,23 @@ nav a:hover {
   border-radius: 20px;
 }
 
+@media (max-width: 850px) {
+  .containerhotels .containercard {
+    display: block;
+    border-radius: 0px;
+    padding-bottom: 20px;
+  }
+}
+
 .containerhotels .containercard .cardcenter {
   padding-top: 20px;
   width: 270px;
+}
+
+@media (max-width: 850px) {
+  .containerhotels .containercard .cardcenter {
+    max-width: 100%;
+  }
 }
 
 .containerhotels .containercard .cardcenter .nrbeds {
@@ -445,6 +586,12 @@ nav a:hover {
   text-align: right;
 }
 
+@media (max-width: 850px) {
+  .containerhotels .containercard .cardright {
+    padding-right: 20px;
+  }
+}
+
 .containerhotels .containercard .cardright .price {
   font-size: 25px;
 }
@@ -456,6 +603,14 @@ nav a:hover {
   border-radius: 20px;
   text-transform: uppercase;
   margin-top: 50px;
+}
+
+@media (max-width: 850px) {
+  .containerhotels .containercard .cardright .viewmore {
+    max-width: 150px;
+    text-align: center;
+    margin: 30px auto;
+  }
 }
 
 .containerhotels .containercard .cardright .viewmore:hover {
@@ -472,6 +627,14 @@ nav a:hover {
   left: 50px;
 }
 
+@media (max-width: 650px) {
+  .containersearch {
+    max-width: 100%;
+    top: -30px;
+    left: 0px;
+  }
+}
+
 .containersearch h1 {
   text-align: left;
   font-family: "SignPainter";
@@ -480,8 +643,20 @@ nav a:hover {
   font-size: 50px;
 }
 
+@media (max-width: 650px) {
+  .containersearch h1 {
+    display: none;
+  }
+}
+
 .containersearch .slogantitle {
   margin-top: 0px;
+}
+
+@media (max-width: 650px) {
+  .containersearch .slogantitle {
+    font-size: 35px;
+  }
 }
 
 .containersearch .slogantext {
@@ -503,6 +678,12 @@ nav a:hover {
   width: 500px;
   padding: 10px;
   border: none;
+}
+
+@media (max-width: 650px) {
+  .containersearch .searchbar {
+    width: 250px;
+  }
 }
 
 .header {
@@ -569,6 +750,32 @@ nav a:hover {
   margin-bottom: 0px;
 }
 
+@media (max-width: 650px) {
+  .populartitle {
+    padding-top: 250px;
+    font-size: 30px;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+.indexhotelimg {
+  max-width: 250px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.headerimg,
+img {
+  width: 100%;
+  margin: 0px;
+}
+
+@media (max-width: 650px) {
+  .headerimg {
+    display: none;
+  }
+}
+
 .addhotel {
   max-width: 500px;
   height: 550px;
@@ -580,6 +787,13 @@ nav a:hover {
   border-radius: 10px 10px 0px 0px;
   text-align: center;
   padding: 30px 10px 10px 10px;
+}
+
+@media (max-width: 510px) {
+  .addhotel {
+    border-radius: 0px;
+    height: 720px;
+  }
 }
 
 .addhotel div {
@@ -594,6 +808,13 @@ nav a:hover {
   width: 200px;
   display: inline-block;
   text-align: left;
+}
+
+@media (max-width: 510px) {
+  .addhotel label {
+    width: 280px;
+    padding-bottom: 5px;
+  }
 }
 
 .addhotel input {
@@ -622,6 +843,13 @@ nav a:hover {
   margin-bottom: 40px;
 }
 
+@media (max-width: 510px) {
+  .addhotel hr {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+}
+
 .addhotel h2 {
   text-transform: uppercase;
   margin: 0px;
@@ -631,6 +859,13 @@ nav a:hover {
   max-width: 500px;
   margin: auto;
   padding-bottom: 50px;
+}
+
+@media (max-width: 510px) {
+  .containeradmin {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .containeradmin h2 {

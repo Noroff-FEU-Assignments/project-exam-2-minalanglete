@@ -9,6 +9,10 @@
   border-radius: 10px 10px 0px 0px;
   text-align: center;
   padding: 30px 10px 10px 10px;
+  @media (max-width: 510px) {
+    border-radius: 0px;
+    height: 720px;
+  }
 
   div {
     padding-bottom: 15px;
@@ -21,6 +25,10 @@
     width: 200px;
     display: inline-block;
     text-align: left;
+    @media (max-width: 510px) {
+      width: 280px;
+      padding-bottom: 5px;
+    }
   }
 
   input {
@@ -44,6 +52,11 @@
   hr {
     width: 480px;
     margin-bottom: 40px;
+
+    @media (max-width: 510px) {
+      width: 250px;
+      margin-bottom: 20px;
+    }
   }
   h2 {
     text-transform: uppercase;
@@ -54,6 +67,10 @@
   max-width: 500px;
   margin: auto;
   padding-bottom: 50px;
+  @media (max-width: 510px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   h2 {
     margin-bottom: 0px;

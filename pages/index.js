@@ -29,7 +29,7 @@ export default function Home(props) {
             className="searchbar"
           ></input>
         </div>
-        <img src="/header.jpg" alt="heder image of Floyen i Bergen " />
+        <img src="/header.jpg" alt="heder image of Floyen i Bergen " className="headerimg" />
       </div>
 
       <p className="populartitle">Popular places to stay in Bergen</p>

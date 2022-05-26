@@ -4,10 +4,18 @@
   background-color: getColour(accent);
   padding: 20px 40px;
   border-radius: 40px 40px 0px 0px;
+  @media (max-width: 690px) {
+    border-radius: 0px;
+
+    padding: 0px;
+  }
 
   h1 {
     text-align: left;
     text-transform: none;
+    @media (max-width: 690px) {
+      padding: 20px 0px 0px 20px;
+    }
   }
 
   .buttonenquiry {
@@ -34,6 +42,14 @@
   .containerinfo {
     display: flex;
     gap: 120px;
+    @media (max-width: 850px) {
+      gap: 50px;
+    }
+    @media (max-width: 690px) {
+      gap: 10px;
+      flex-direction: column;
+      padding-left: 20px;
+    }
 
     .discription {
       max-width: 400px;
@@ -47,6 +63,9 @@
     color: getColour(secondary);
     font-family: $font-primary;
     font-weight: bold;
+    @media (max-width: 690px) {
+      padding-right: 20px;
+    }
 
     .price {
       font-size: 25px;
@@ -60,9 +79,17 @@
   .facilities {
     font-weight: bold;
     margin-bottom: 0px;
+    @media (max-width: 690px) {
+      padding-left: 20px;
+    }
   }
   .facilitiesinfo {
     display: flex;
     gap: 28px;
+    @media (max-width: 690px) {
+      gap: 0px;
+      flex-direction: column;
+      padding-left: 20px;
+    }
   }
 }

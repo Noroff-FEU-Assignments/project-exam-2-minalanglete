@@ -2,6 +2,9 @@
   background-color: getColour(accent);
   padding: 30px;
   margin-bottom: 40px;
+  @media (max-width: 850px) {
+    padding: 0px;
+  }
 
   a:visited {
     color: getColour(primary);
@@ -15,14 +18,24 @@
 
   h2 {
     margin: 0px;
+    @media (max-width: 850px) {
+      padding-left: 20px;
+    }
   }
   p {
     margin: 0px;
+    @media (max-width: 850px) {
+      padding-left: 20px;
+    }
   }
 
   .hotelimagecard {
     max-width: 300px;
     border-radius: 20px 0px 0px 20px;
+    @media (max-width: 850px) {
+      max-width: 100%;
+      border-radius: 0px;
+    }
   }
 
   .containercard {
@@ -32,10 +45,19 @@
     display: flex;
     gap: 30px;
     border-radius: 20px;
+    @media (max-width: 850px) {
+      display: block;
+      border-radius: 0px;
+      padding-bottom: 20px;
+    }
 
     .cardcenter {
       padding-top: 20px;
       width: 270px;
+      @media (max-width: 850px) {
+        max-width: 100%;
+      }
+
       .nrbeds {
         padding-top: 30px;
       }
@@ -45,6 +67,9 @@
       color: getColour(secondary);
       font-weight: bold;
       text-align: right;
+      @media (max-width: 850px) {
+        padding-right: 20px;
+      }
       .price {
         font-size: 25px;
       }
@@ -55,6 +80,11 @@
         border-radius: 20px;
         text-transform: uppercase;
         margin-top: 50px;
+        @media (max-width: 850px) {
+          max-width: 150px;
+          text-align: center;
+          margin: 30px auto;
+        }
       }
       .viewmore:hover {
         background-color: getColour(primary);
