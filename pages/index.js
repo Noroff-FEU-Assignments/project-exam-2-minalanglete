@@ -4,7 +4,8 @@ import Footer from "../components/layout/Footer";
 import Heading from "../components/layout/Heading";
 import axios from "axios";
 import { BASE_URL } from "../components/constants/api";
-import Navbar from "../components/layout/NavBar";
+
+//import Navbar from "../components/layout/NavBar";
 
 export default function Home(props) {
   console.log(props);
@@ -35,19 +36,25 @@ export default function Home(props) {
       <p className="populartitle">Popular places to stay in Bergen</p>
       <div className="containerpopular">
         {props.hotels.map((hotel) => {
+          const address = hotel.short_description;
           return (
             <a key={hotel.id} href={`hotel/${hotel.id}`}>
               <div className="popularhotel">
-                <img src="/hotel.jpg" alt="hotels" className="indexhotelimg" />
-                <h2>{hotel.attributes.name}</h2>
+                <img
+                  src={hotel.images[0].src}
+                  alt={hotel.images[0].alt}
+                  className="indexhotelimg"
+                />
+                <h2>{hotel.name}</h2>
                 <hr />
-                <p>{hotel.attributes.address}</p>
-                <p className="price">{hotel.attributes.price} pr night</p>
+                <p>{address.replace(/(<([^>]+)>)/gi, "")}</p>
+                <p className="price">{hotel.prices.price} pr night</p>
               </div>
             </a>
           );
         })}
       </div>
+
       <Footer />
     </Layout>
   );
@@ -58,7 +65,7 @@ export async function getStaticProps() {
   try {
     const response = await axios.get(BASE_URL);
     console.log(response.data);
-    hotels = response.data.data;
+    hotels = response.data;
   } catch (error) {
     console.log(error);
   }

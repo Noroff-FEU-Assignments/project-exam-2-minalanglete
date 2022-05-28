@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Link from "next/link";
+
+import ActiveLink from "./ActiveLink";
 
 export default function Navbar() {
   const [style, setStyle] = useState("navbar1");
@@ -36,21 +37,24 @@ export default function Navbar() {
         <div className="navbar2">
           <div className="logo">Holidaze</div>
 
-          <Link className="navbar3" href="/">
+          <ActiveLink activeClassName="active" href="/" passHref>
             <a className="navbar3">Home</a>
-          </Link>
-          <Link className="navbar3" href="/hotels">
+          </ActiveLink>
+          <ActiveLink activeClassName="active" href="/hotels" passHref>
             <a className="navbar3">Hotels</a>
-          </Link>
-          <Link className="navbar3" href="/enquiry">
+          </ActiveLink>
+          <ActiveLink activeClassName="active" href="/enquiry" passHref>
             <a className="navbar3">Enquiry to a hotel</a>
-          </Link>
-          <Link className="navbar3" href="/contact">
+          </ActiveLink>
+          <ActiveLink activeClassName="active" href="/contact" passHref>
             <a className="navbar3">Contact</a>
-          </Link>
-          <Link className="navbar3" href="/login">
+          </ActiveLink>
+          <ActiveLink activeClassName="active" href="/login" passHref>
+            <a className="navbar3">Login</a>
+          </ActiveLink>
+          <ActiveLink activeClassName="active" href="/admin" passHref>
             <a className="navbar3">Admin</a>
-          </Link>
+          </ActiveLink>
         </div>
       </div>
     </div>

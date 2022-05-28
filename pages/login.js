@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Layout from "../components/layout/Layout";
 import Footer from "../components/layout/Footer";
-//import LoginForm from "../components/layout/LoginForm";
-import LoginForm from "../components/constants/Login";
+import LoginForm from "../components/layout/LoginForm";
+//import LoginForm from "../components/constants/Login";
 
 export default function Home() {
   return (

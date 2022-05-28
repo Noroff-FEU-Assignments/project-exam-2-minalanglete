@@ -4,10 +4,9 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import axios from "axios";
 import { TOKEN } from "./apiLogin";
-import FormError from "../common/FormError";
+//import ValidationError from "../common/FormError";
 
 const url = TOKEN;
-
 const schema = yup.object().shape({
   username: yup.string().required("Please enter your username"),
   password: yup.string().required("Please enter your password"),
@@ -41,16 +40,16 @@ export default function LoginForm() {
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {loginError && <FormError>{loginError}</FormError>}
+        {loginError && <ValidationError>{loginError}</ValidationError>}
         <fieldset disabled={submitting}>
           <div>
             <input name="username" placeholder="Username" ref={register} />
-            {errors.username && <FormError>{errors.username.message}</FormError>}
+            {errors.username && <ValidationError>{errors.username.message}</ValidationError>}
           </div>
 
           <div>
             <input name="password" placeholder="Password" ref={register} type="password" />
-            {errors.password && <FormError>{errors.password.message}</FormError>}
+            {errors.password && <ValidationError>{errors.password.message}</ValidationError>}
           </div>
           <button>{submitting ? "Loggin in..." : "Login"}</button>
         </fieldset>

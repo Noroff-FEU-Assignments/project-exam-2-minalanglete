@@ -15,22 +15,28 @@ export default function Home(props) {
       <Heading title="Hotels" />
       <div className="containerhotels">
         {props.hotels.map((hotel) => {
+          const address = hotel.short_description;
           return (
             <a key={hotel.id} href={`hotel/${hotel.id}`}>
               <div className="containercard">
                 <div className="cardleft">
-                  <img src="/bed.jpg" alt="hotelroom bed" className="hotelimagecard" />
+                  <img
+                    src={hotel.images[0].src}
+                    alt={hotel.images[0].alt}
+                    className="hotelimagecard"
+                  />
                 </div>
                 <div className="cardcenter">
-                  <h2>{hotel.attributes.name}</h2>
-                  <p>{hotel.attributes.address}</p>
-                  <p className="nrbeds">number of beds {hotel.attributes.bed}</p>
-                  <p>wifi at the hotel: {hotel.attributes.wifi}</p>
-                  <p>Parking at the hotel: {hotel.attributes.parking}</p>
-                  <p>Breakfast included: {hotel.attributes.breakfast}</p>
+                  <h2>{hotel.name}</h2>
+
+                  <p>{address.replace(/(<([^>]+)>)/gi, "")}</p>
+                  <p className="nrbeds">number of beds 2</p>
+                  <p>wifi at the hotel: yes</p>
+                  <p>Parking at the hotel: yes</p>
+                  <p>Breakfast included: yes</p>
                 </div>
                 <div className="cardright">
-                  <p className="price">{hotel.attributes.price} NOK</p>
+                  <p className="price">{hotel.prices.price} NOK</p>
                   <p>pr night</p>
 
                   <p className="viewmore">View more</p>
@@ -50,7 +56,7 @@ export async function getStaticProps() {
   try {
     const response = await axios.get(BASE_URL);
     console.log(response.data);
-    hotels = response.data.data;
+    hotels = response.data;
   } catch (error) {
     console.log(error);
   }

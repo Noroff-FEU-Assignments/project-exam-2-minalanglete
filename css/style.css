@@ -194,6 +194,10 @@ nav a:hover {
   text-align: left;
 }
 
+.active {
+  background-color: #a81600;
+}
+
 .footer {
   background-color: #efefef;
   margin: auto;
@@ -709,7 +713,7 @@ nav a:hover {
   background-color: #363636;
   color: white;
   max-width: 250px;
-  height: 450px;
+  height: 290px;
   font-size: 15px;
   border-radius: 40px 40px 0px 0px;
   position: relative;
@@ -965,7 +969,7 @@ img {
   .navbar_change {
     background-color: #363636;
     text-align: center;
-    height: 400px;
+    height: 500px;
     max-width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;

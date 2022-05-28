@@ -1,3 +1,1 @@
-export const TOKEN = "https://exam-hotels.herokuapp.com/auth/local";
-
-//d7beaf0978485879c32b09b32501f85fce491ad1e901876ec0493ed670e511a3b4df84afc310397224d188919bf62ac1feac31bf3082d75e2c3e260c2840020e0fed4363c4e1a033020553589303445f19042e0b8e375ae15ef259bc7b9a628a7bb043f97c8427ef9f6892e9906f0aa1fc12f02a2e7d267886482a3772a5ce72
+export const TOKEN = "https://www.minalanglete.no/wp-json/jwt-auth/v1/token";

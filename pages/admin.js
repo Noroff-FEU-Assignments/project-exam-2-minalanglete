@@ -22,8 +22,7 @@ export default function Admin(props) {
           {props.hotels.map((hotel) => {
             return (
               <div>
-                <h2>{hotel.attributes.name}</h2>
-                <p>{hotel.attributes.address}</p>
+                <h2>{hotel.name}</h2>
               </div>
             );
           })}
@@ -40,7 +39,7 @@ export async function getStaticProps() {
   try {
     const response = await axios.get(BASE_URL);
     console.log(response.data);
-    hotels = response.data.data;
+    hotels = response.data;
   } catch (error) {
     console.log(error);
   }
