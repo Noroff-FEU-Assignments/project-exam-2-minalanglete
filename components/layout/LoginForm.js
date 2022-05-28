@@ -1,6 +1,7 @@
 export default function () {
   return (
     <form className="login">
+      <div class="container-message"></div>
       <div>
         <label for="username">Username</label>
         <input type="text" id="username" name="username" required minlength="4" />
