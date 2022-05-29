@@ -206,10 +206,11 @@ nav a:hover {
   padding-bottom: 30px;
 }
 
-.footer h4 {
+.footer h3 {
   font-family: "verdana", sans-serif;
   text-transform: uppercase;
   margin-bottom: 3px;
+  font-size: 16px;
 }
 
 .footer .copyright {
@@ -491,6 +492,10 @@ nav a:hover {
             flex-direction: column;
     padding-left: 20px;
   }
+}
+
+.svg2 {
+  color: black;
 }
 
 .containerhotels {

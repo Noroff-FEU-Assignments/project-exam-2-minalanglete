@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer">
         <div className="footercontainer">
           <div className="footerleft">
-            <h4>How to reach us</h4>
+            <h3>How to reach us</h3>
             <hr />
             <p>Holidaze AS</p>
             <p>Bryggegata 12</p>
@@ -14,7 +14,7 @@ export default function Footer() {
             <p>Norway</p>
           </div>
           <div className="footercenter">
-            <h4>Menu</h4>
+            <h3>Menu</h3>
             <hr />
             <Link href="/">
               <a>Home</a>
@@ -30,7 +30,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="footerright">
-            <h4>Admin</h4>
+            <h3>Admin</h3>
             <hr />
             <Link href="/login">
               <a>Login</a>

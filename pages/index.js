@@ -4,8 +4,7 @@ import Footer from "../components/layout/Footer";
 import Heading from "../components/layout/Heading";
 import axios from "axios";
 import { BASE_URL } from "../components/constants/api";
-
-//import Navbar from "../components/layout/NavBar";
+//import Search from "../components/layout/Search";
 
 export default function Home(props) {
   console.log(props);
@@ -75,13 +74,4 @@ export async function getStaticProps() {
       hotels: hotels,
     },
   };
-}
-
-export function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
 }
