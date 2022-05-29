@@ -21,7 +21,7 @@ export default function Admin(props) {
         <div className="addedhotels">
           {props.hotels.map((hotel) => {
             return (
-              <div>
+              <div key={hotel.id}>
                 <h2>{hotel.name}</h2>
               </div>
             );

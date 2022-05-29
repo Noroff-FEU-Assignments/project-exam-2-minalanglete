@@ -1,28 +1,21 @@
-export default function () {
+export default function ContactForm() {
   return (
     <form className="contactform">
       <div>
-        <label for="name">Your name</label>
-        <input type="text" id="name" name="name" required minlength="3" />
+        <label htmlFor="name">Your name</label>
+        <input type="text" id="name" name="name" />
       </div>
       <div>
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" pattern="[a-z]{0,9}+@[a-z]{0,9}" />
       </div>
       <div>
-        <label for="subject">Subject</label>
+        <label htmlFor="subject">Subject</label>
         <input type="text" id="subject" name="subject" />
       </div>
       <div>
-        <label for="message">Message</label>
-        <input
-          type="text"
-          id="message"
-          name="message"
-          required
-          minlength="10"
-          className="message"
-        />
+        <label htmlFor="message">Message</label>
+        <input type="text" id="message" name="message" required className="message" />
       </div>
       <button type="submit">Send message</button>
     </form>

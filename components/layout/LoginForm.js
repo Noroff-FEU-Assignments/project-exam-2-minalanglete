@@ -1,14 +1,14 @@
-export default function () {
+export default function LoginForm() {
   return (
     <form className="login">
-      <div class="container-message"></div>
+      <div className="container-message"></div>
       <div>
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required minlength="4" />
+        <label htmlFor="username">Username</label>
+        <input type="text" id="username" name="username" />
       </div>
       <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required minlength="4" />
+        <label htmlFor="password">Password</label>
+        <input type="password" id="password" name="password" />
       </div>
       <button type="submit">Logon</button>
     </form>
